@@ -1,0 +1,32 @@
+.dashboard-layout-wrapper {
+  @apply grid;
+
+  grid-template-columns: 16.25rem 1fr;
+
+  .sidebar {
+    @apply flex flex-col items-center  px-7 pt-16;
+
+    box-shadow: -4px 10px 42px rgba(0, 0, 0, 0.25),
+      -10px 4px 42px 18px rgba(103, 175, 216, 0.24);
+
+    .menu-tab {
+      @apply flex items-center pl-5 mt-6 w-full h-12 rounded-md;
+
+      span {
+        @apply ml-4;
+      }
+    }
+
+    .active-menu-tab {
+      @apply flex items-center pl-5 mt-6 w-full h-12 rounded-md bg-[#77777729];
+
+      span {
+        @apply ml-4;
+      }
+    }
+  }
+
+  .main {
+    @apply flex flex-col items-start px-[3.75rem] pb-12;
+  }
+}

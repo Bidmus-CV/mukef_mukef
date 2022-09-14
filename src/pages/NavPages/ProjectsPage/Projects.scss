@@ -1,0 +1,31 @@
+.project-wrapper {
+  .project-bg {
+    background: url("/images/project-bg.png");
+    background-size: cover;
+    @apply h-[38rem] w-full flex flex-col  relative;
+
+    .first-text {
+      @apply text-whitee pt-[13.875rem] pl-[10.5625rem] max-w-[35.25rem];
+    }
+
+    .right-wrap {
+      @apply bg-primary max-w-[29.125rem] absolute bottom-[-12rem] left-[78rem]  p-6 text-whitee;
+
+      .right {
+        @apply flex flex-col gap-12;
+      }
+    }
+  }
+
+  .main-page {
+    @apply pt-8 flex flex-col items-center;
+
+    .first-text {
+      @apply pt-[13.875rem];
+    }
+
+    .project-wrap {
+      @apply grid grid-cols-3 gap-[4.6875rem] max-w-[75rem];
+    }
+  }
+}

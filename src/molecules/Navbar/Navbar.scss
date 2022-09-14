@@ -1,0 +1,16 @@
+.nav {
+  @apply bg-primary w-full py-8 pr-[7.5625rem] pl-[3.875rem] flex items-center justify-between text-whitee;
+
+  .logo-wrap {
+    @apply flex gap-10 items-center;
+  }
+
+  .links {
+    @apply flex items-center gap-7;
+  }
+}
+.active {
+  @apply text-whitee;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}

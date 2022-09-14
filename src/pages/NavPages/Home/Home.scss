@@ -1,0 +1,26 @@
+.home-wrapper {
+  .house-bg {
+    background-image: url("/images/house.png");
+    background-size: cover;
+    @apply h-[53rem] w-full flex flex-col items-center relative pt-24;
+  }
+
+  .bottom-cards {
+    @apply flex absolute gap-[8.4375rem] bottom-[-20rem];
+
+    .right-wrap {
+      @apply bg-primary max-w-[29.125rem] rounded-md p-6 text-whitee;
+
+      .right {
+        @apply flex flex-col gap-44;
+      }
+    }
+  }
+  .main-page {
+    @apply pt-[31rem] flex flex-col items-center pb-[7.8125rem];
+
+    .news-wrap {
+      @apply grid grid-cols-2 gap-6;
+    }
+  }
+}

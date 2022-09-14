@@ -1,0 +1,25 @@
+.contact-bg {
+  background: url("/images/image16.png");
+  background-size: cover;
+  @apply h-[30rem] w-full flex flex-col relative;
+
+  .first-text {
+    @apply text-whitee pt-[10.875rem] pl-[10.5625rem] max-w-[40.25rem];
+  }
+
+  .right-wrap {
+    @apply bg-primary max-w-[29.125rem] absolute bottom-[-6rem] left-[78rem]  p-6 text-whitee;
+
+    .right {
+      @apply flex flex-col mb-10;
+    }
+  }
+}
+
+.main {
+  .input-card {
+    @apply my-[4rem];
+    box-shadow: 0px -4px 15px rgba(255, 255, 255, 0.39),
+      0px 4px 11px rgba(29, 35, 25, 0.35);
+  }
+}

@@ -1,0 +1,21 @@
+.about-bg {
+  background: url("/images/image15.png");
+  background-size: cover;
+  @apply h-[38rem] w-full flex flex-col  relative;
+
+  .right-wrap {
+    @apply bg-primary max-w-[29.125rem] absolute bottom-[-6rem] left-[78rem]  p-6 text-whitee;
+
+    .right {
+      @apply flex flex-col gap-44;
+    }
+  }
+}
+
+.main {
+  @apply flex flex-col items-center;
+
+  .top-tier {
+    @apply flex flex-col items-center gap-[6.25rem] pt-[13.5rem];
+  }
+}

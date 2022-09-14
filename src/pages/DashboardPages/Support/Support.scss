@@ -1,0 +1,13 @@
+.ongoing-projects {
+  h3 {
+    @apply text-[2rem] font-normal pl-[2rem] text-black3 pb-4 pt-[4.07rem];
+  }
+
+  hr {
+    @apply w-[80rem] text-[#F5F5F5] h-[2px] pb-[3.344rem];
+  }
+}
+
+.project-wrap {
+  @apply pl-[4rem];
+}

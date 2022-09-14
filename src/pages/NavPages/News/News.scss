@@ -1,0 +1,23 @@
+.news-wrapper {
+  .news-bg {
+    background: url("/images/news.png");
+    background-size: cover;
+    @apply h-[43rem] w-full flex flex-col  relative;
+
+    .first-text {
+      @apply text-whitee pt-[13.875rem] pl-[10.5625rem];
+    }
+
+    .right-wrap {
+      @apply bg-primary max-w-[29.125rem] absolute bottom-[-6rem] left-[78rem]  p-6 text-whitee;
+
+      .right {
+        @apply flex flex-col gap-44;
+      }
+    }
+  }
+
+  .wrapper {
+    @apply flex flex-col gap-8 pb-11 pt-[13.4375rem];
+  }
+}

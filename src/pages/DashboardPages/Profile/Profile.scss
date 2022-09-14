@@ -1,0 +1,36 @@
+.personal-info {
+  @apply w-full relative;
+  h3 {
+    @apply text-xl font-normal text-black3 pl-4 pb-4 pt-[4.07rem];
+  }
+
+  hr {
+    @apply w-[90rem] text-[#F5F5F5] h-[2px];
+  }
+
+  .wrapper {
+    @apply pl-8 pt-[2.78125rem] relative;
+
+    .personal-info-field {
+      @apply w-[40%] grid mt-6;
+
+      grid-template-columns: 10rem 1fr;
+    }
+  }
+
+  .button {
+    @apply ml-[80rem];
+  }
+}
+
+.project-history {
+  @apply w-full;
+
+  h3 {
+    @apply text-xl font-normal text-black3 ml-4 mt-[4.07rem] mb-0;
+  }
+
+  hr {
+    @apply w-[100%] border-[#F5F5F5] border-solid border-2 mt-2;
+  }
+}
