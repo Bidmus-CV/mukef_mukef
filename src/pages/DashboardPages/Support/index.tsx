@@ -1,7 +1,7 @@
 import FirstProject from "../../../atoms/projects/FirstProject";
 import { projectData1 } from "../../../data/ProjectData";
 import AgasBox from "../../../molecules/AgasBox";
-import DashboardLayout from "../../../organisms/DashboardLayout";
+import DashboardLayout from "../../../templates/DashboardLayout";
 import "./Support.scss";
 
 const Support = () => {

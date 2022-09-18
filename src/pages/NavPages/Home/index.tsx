@@ -1,5 +1,5 @@
 import Button from "../../../atoms/Button";
-import PageLayout from "../../../organisms/PageLayout";
+import PageLayout from "../../../templates/PageLayout";
 import "./Home.scss";
 import { leftCard, rightCard } from "../../../data/HomeData";
 import News from "../../../atoms/News";

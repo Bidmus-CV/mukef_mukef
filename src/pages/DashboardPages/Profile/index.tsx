@@ -1,6 +1,6 @@
 import Button from "../../../atoms/Button";
 import AgasBox from "../../../molecules/AgasBox";
-import DashboardLayout from "../../../organisms/DashboardLayout";
+import DashboardLayout from "../../../templates/DashboardLayout";
 import * as React from "react";
 import { styled } from "@mui/material/styles";
 import Table from "@mui/material/Table";
@@ -235,14 +235,7 @@ const Profile = () => {
 
     return (
       <React.Fragment>
-        <TableRow
-        // sx={{
-        //   // "& > *": { borderBottom: "unset" },
-        //   "&:nth-of-type(odd)": {
-        //     backgroundColor: "#F2F2F2",
-        //   },
-        // }}
-        >
+        <TableRow>
           <StyledTableCell component="th" scope="row">
             {row.year}
           </StyledTableCell>
@@ -281,11 +274,7 @@ const Profile = () => {
                 >
                   <Table size="small" aria-label="purchases">
                     <TableHead>
-                      <TableRow
-                        sx={{
-                          border: "1px solid red",
-                        }}
-                      >
+                      <TableRow>
                         <StyledTableCell>Date</StyledTableCell>
                         <StyledTableCell>Amount Added</StyledTableCell>
                         <StyledTableCell align="right">Status</StyledTableCell>
@@ -371,7 +360,7 @@ const Profile = () => {
                   <StyledTableCell align="right">
                     Remaining Amount
                   </StyledTableCell>
-                  <StyledTableCell align="center">Date</StyledTableCell>
+                  <StyledTableCell align="right">Date</StyledTableCell>
                 </TableRow>
               </TableHead>
               <TableBody style={{ border: "none" }}>

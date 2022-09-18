@@ -8,7 +8,7 @@ import {
   projectData3,
   rightCard,
 } from "../../../data/ProjectData";
-import PageLayout from "../../../organisms/PageLayout";
+import PageLayout from "../../../templates/PageLayout";
 import "./Projects.scss";
 
 const Projects = () => {

@@ -1,5 +1,5 @@
 import { rightCard2, rightCard3 } from "../../../data/NewsData";
-import PageLayout from "../../../organisms/PageLayout";
+import PageLayout from "../../../templates/PageLayout";
 import "./Contact.scss";
 
 const Contact = () => {

@@ -1,39 +1,47 @@
-.main-section {
-  @apply flex flex-col items-center;
+.container {
+  @apply flex flex-col justify-center w-full;
 
-  h3 {
-    @apply text-center text-[#100C2A] text-3xl py-[4.5rem] font-semibold;
-  }
+  .main-section {
+    @apply flex flex-col justify-center w-full;
 
-  .cards-wrapper {
-    @apply flex items-center gap-[3.625rem];
+    .transaction {
+      @apply text-center text-[#100C2A] text-3xl py-[4.5rem] font-semibold;
+    }
 
-    .first-card {
-      @apply h-[9.25rem] w-[23.75rem] bg-gray4 pt-6 pl-10 rounded-lg;
+    .cards-wrapper {
+      @apply flex items-center gap-[3.625rem];
 
-      .text-bg {
-        @apply bg-[#07060d14] w-[10.812rem] h-8 text-[#07060D] text-sm font-medium flex items-center justify-center;
+      .first-card {
+        @apply h-[9.25rem] w-[23.75rem] bg-gray4 pt-6 pl-10 rounded-lg;
+
+        .text-bg {
+          @apply bg-[#07060d14] w-[10.812rem] h-8 text-[#07060D] text-sm font-medium flex items-center justify-center;
+        }
+
+        h2 {
+          @apply text-2xl font-semibold pt-6;
+        }
       }
 
-      h2 {
-        @apply text-2xl font-semibold pt-6;
+      .second-card {
+        @apply h-[9.25rem] w-[23.75rem] bg-gray4 pt-6 pl-10 rounded-lg;
+
+        .text-bg {
+          @apply bg-[#21965314] w-[10.812rem] h-8 text-[#219653] text-sm font-medium flex items-center justify-center;
+        }
+
+        h2 {
+          @apply text-2xl font-semibold pt-6;
+        }
       }
     }
 
-    .second-card {
-      @apply h-[9.25rem] w-[23.75rem] bg-gray4 pt-6 pl-10 rounded-lg;
+    .big-card {
+      @apply w-[51.125rem] h-[20.0625rem] bg-gray4 rounded-xl my-[4.375rem];
 
-      .text-bg {
-        @apply bg-[#21965314] w-[10.812rem] h-8 text-[#219653] text-sm font-medium flex items-center justify-center;
-      }
-
-      h2 {
-        @apply text-2xl font-semibold pt-6;
+      .tier-one {
+        @apply flex justify-between p-4;
       }
     }
-  }
-
-  .big-card {
-    @apply w-[51.125rem] h-[20.0625rem] bg-gray4 rounded-xl my-[4.375rem];
   }
 }

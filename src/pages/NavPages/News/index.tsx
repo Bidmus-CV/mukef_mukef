@@ -1,7 +1,7 @@
 import Button from "../../../atoms/Button";
 import LatestNews from "../../../atoms/LatestNews";
 import { newsData, rightCard } from "../../../data/NewsData";
-import PageLayout from "../../../organisms/PageLayout";
+import PageLayout from "../../../templates/PageLayout";
 import "./News.scss";
 
 const News = () => {

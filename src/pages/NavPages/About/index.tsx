@@ -3,7 +3,7 @@ import SecondAbout from "../../../atoms/About/SecondAbout";
 import Button from "../../../atoms/Button";
 import { FirstData, secondData, thirdData } from "../../../data/AboutData";
 import { rightCard2 } from "../../../data/NewsData";
-import PageLayout from "../../../organisms/PageLayout";
+import PageLayout from "../../../templates/PageLayout";
 import "./About.scss";
 
 const About = () => {

@@ -1,4 +1,4 @@
-import DashboardLayout from "../../../organisms/DashboardLayout";
+import DashboardLayout from "../../../templates/DashboardLayout";
 import "./Donation.scss";
 
 const DonationPage = () => {
