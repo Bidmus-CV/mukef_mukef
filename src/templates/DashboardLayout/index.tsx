@@ -32,7 +32,7 @@ const menuList = [
   {
     title: "Logout",
     icon: LogoutIcon,
-    url: "",
+    url: "/",
   },
 ];
 

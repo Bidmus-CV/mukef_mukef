@@ -1,0 +1,14 @@
+.input-style {
+  @apply py-4 px-6 border border-solid border-[#0000001a] bg-gray4 rounded-md text-sm font-normal w-[85%];
+  ::placeholder {
+    @apply text-[#0000004d] text-base font-normal bg-transparent;
+  }
+
+  input {
+    border: none;
+    outline: none;
+    font-weight: 400;
+    color: black;
+    background: none;
+  }
+}

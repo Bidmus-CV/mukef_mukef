@@ -1,0 +1,27 @@
+.modal-wrapper {
+  @apply flex flex-col gap-8 pb-6 items-center;
+
+  .text-wrap {
+    @apply flex text-black3 px-10 justify-between w-full text-lg font-medium;
+
+    .remember-me {
+      @apply flex gap-3 items-center cursor-pointer;
+    }
+  }
+
+  .button {
+    @apply w-[25rem];
+  }
+
+  .line-container {
+    @apply flex items-center gap-2 text-lg text-[#CACACA];
+
+    hr {
+      @apply border border-solid border-[#CACACA] w-[166px];
+    }
+  }
+
+  .last-text-wrap {
+    @apply flex w-full justify-between text-lg px-10 pb-14 font-medium;
+  }
+}

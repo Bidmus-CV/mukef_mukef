@@ -1,11 +1,14 @@
-import { useEffect } from "react";
+import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import Button from "../../atoms/Button";
+import Modal from "../../organisms/modals";
+import LoginModal from "../../organisms/modals/loginModal";
 import LogoIcon from "../../vectors/Logo";
 import "./Navbar.scss";
 
 const Navbar = () => {
   const loc = window.location.pathname;
+  const [openLoginModal, setOpenLoginModal] = useState(false);
 
   return (
     <div className="nav">
@@ -32,10 +35,20 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="log-in w-[8.06rem]">
-        <Button customClasses="bg-whitee text-primary rounded-md font-bold">
-          Login
+        <Button
+          customClasses="bg-whitee text-primary rounded-md font-bold"
+          onClick={() => setOpenLoginModal(true)}
+        >
+          <p>Login</p>
         </Button>
       </div>
+      <Modal
+        title="Login"
+        openModal={openLoginModal}
+        closeModal={() => setOpenLoginModal(false)}
+      >
+        <LoginModal />
+      </Modal>
     </div>
   );
 };

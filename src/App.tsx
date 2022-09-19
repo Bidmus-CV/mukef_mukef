@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import LoginModal from "./organisms/modals/loginModal";
 import DonationPage from "./pages/DashboardPages/Donation";
 import Profile from "./pages/DashboardPages/Profile";
 import Support from "./pages/DashboardPages/Support";
