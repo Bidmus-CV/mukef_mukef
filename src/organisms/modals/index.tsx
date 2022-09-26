@@ -1,6 +1,7 @@
 import React, { ReactNode } from "react";
 import CloseIcon from "../../vectors/CloseIcon";
 import "./Modal.scss";
+
 const Modal = ({
   openModal,
   children,

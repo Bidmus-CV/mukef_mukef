@@ -1,47 +1,94 @@
-.container {
-  @apply flex flex-col justify-center w-full;
+.main-section {
+  @apply flex flex-col items-center w-full;
 
-  .main-section {
-    @apply flex flex-col justify-center w-full;
+  .transaction {
+    @apply text-center text-[#100C2A] text-3xl py-[4.5rem] font-semibold;
+  }
 
-    .transaction {
-      @apply text-center text-[#100C2A] text-3xl py-[4.5rem] font-semibold;
-    }
+  .cards-wrapper {
+    @apply flex items-center justify-center w-[90%] gap-[3.625rem];
 
-    .cards-wrapper {
-      @apply flex items-center gap-[3.625rem];
+    .first-card {
+      @apply h-[9.25rem] w-[36%] bg-gray4 pt-6 pl-10 rounded-lg;
 
-      .first-card {
-        @apply h-[9.25rem] w-[23.75rem] bg-gray4 pt-6 pl-10 rounded-lg;
-
-        .text-bg {
-          @apply bg-[#07060d14] w-[10.812rem] h-8 text-[#07060D] text-sm font-medium flex items-center justify-center;
-        }
-
-        h2 {
-          @apply text-2xl font-semibold pt-6;
-        }
+      .text-bg {
+        @apply bg-[#07060d14] w-[10.812rem] h-8 text-[#07060D] text-sm font-medium flex items-center justify-center;
       }
 
-      .second-card {
-        @apply h-[9.25rem] w-[23.75rem] bg-gray4 pt-6 pl-10 rounded-lg;
-
-        .text-bg {
-          @apply bg-[#21965314] w-[10.812rem] h-8 text-[#219653] text-sm font-medium flex items-center justify-center;
-        }
-
-        h2 {
-          @apply text-2xl font-semibold pt-6;
-        }
+      h2 {
+        @apply text-2xl font-semibold pt-6;
       }
     }
 
-    .big-card {
-      @apply w-[51.125rem] h-[20.0625rem] bg-gray4 rounded-xl my-[4.375rem];
+    .second-card {
+      @apply h-[9.25rem] w-[36%] bg-gray4 pt-6 pl-10 rounded-lg;
 
-      .tier-one {
-        @apply flex justify-between p-4;
+      .text-bg {
+        @apply bg-[#21965314] w-[10.812rem] h-8 text-[#219653] text-sm font-medium flex items-center justify-center;
       }
+
+      h2 {
+        @apply text-2xl font-semibold pt-6;
+      }
+    }
+  }
+
+  .big-card {
+    @apply w-[68%] h-[20.0625rem] bg-gray4 rounded-xl my-[4.375rem];
+
+    .tier-one {
+      @apply flex justify-between p-4;
+
+      .left {
+        h2 {
+          @apply text-2xl text-[#100C2A] font-medium;
+        }
+        .year {
+          @apply text-[#2E2E2E] text-lg;
+        }
+      }
+    }
+
+    .right-card {
+      @apply flex flex-col items-end gap-6;
+      h4 {
+        @apply text-[#434343] text-2xl font-medium;
+      }
+      h1 {
+        @apply text-[#100C2A] text-5xl font-medium;
+      }
+    }
+
+    .tier-two {
+      @apply flex items-center justify-between pr-[9.1875rem];
+
+      .pay-wrap {
+        @apply flex items-center pt-[4.8rem] justify-between w-[50%];
+
+        .payment-made {
+          @apply flex gap-4 justify-between flex-col;
+        }
+        .payment-complete {
+          @apply flex gap-4 justify-between flex-col;
+        }
+        .icon-wrap {
+          @apply flex items-center text-[#434343] opacity-70 gap-2;
+        }
+      }
+      .payment-value {
+        @apply text-xl font-medium pl-4 text-[#100C2A];
+      }
+    }
+  }
+  .payment-history-section {
+    @apply w-[68%] flex items-center justify-between;
+
+    .payment-history {
+      @apply text-xl font-semibold;
+    }
+
+    .input-background {
+      @apply bg-gray4 flex items-center pl-6 border border-solid border-[#0000001a] rounded-md;
     }
   }
 }
