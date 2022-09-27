@@ -4,8 +4,12 @@ import DashboardLayout from "../../../templates/DashboardLayout";
 import "./Profile.scss";
 import ProjectHistoryTable from "../../../molecules/tables/SupportHistoryTable";
 import DonationHistoryTable from "../../../molecules/tables/DonationHistoryTable";
+import { useState } from "react";
+import DonationModal from "../../../organisms/modals/donationModal";
+import Modal from "../../../organisms/modals";
 
 const Profile = () => {
+  const [openAddDonationModal, setOpenAddDonationModal] = useState(false);
   const personalInfoList = [
     {
       title: "Title",
@@ -54,12 +58,12 @@ const Profile = () => {
         <div className="wrapper">
           {personalInfoList.map(({ title, value }) => (
             <div className="personal-info-field">
-              <span className=" text-[#858585]">{title}</span>
+              <span className="text-[#858585]">{title}</span>
               <span className="ml-4 text-[#222222] text-lg">{value}</span>
             </div>
           ))}
         </div>
-        <div className="button w-[13.5575rem]">
+        <div className="button w-[13.5rem]">
           <Button customClasses="bg-primary text-whitee rounded-md font-medium">
             Edit
           </Button>
@@ -72,8 +76,8 @@ const Profile = () => {
         <div className="mt-[2.8rem]">
           <ProjectHistoryTable />
         </div>
-        <div className=" mt-6 flex justify-end w-full">
-          <Button customClasses="bg-primary w-[13.5575rem] text-whitee rounded-md font-medium">
+        <div className="mt-6 flex justify-end w-full">
+          <Button customClasses="bg-primary w-[13.5rem] text-whitee rounded-md font-medium">
             Support a Project
           </Button>
         </div>
@@ -83,6 +87,24 @@ const Profile = () => {
         <hr />
         <DonationHistoryTable />
       </div>
+      <div className="mt-16 flex justify-center w-full">
+        <div className="w-[13.5rem]">
+          <Button
+            customClasses="bg-primary text-whitee rounded-md font-bold"
+            onClick={() => setOpenAddDonationModal(true)}
+          >
+            <p>Add donation</p>
+          </Button>
+        </div>
+      </div>
+      <Modal
+        title="Add donation"
+        openModal={openAddDonationModal}
+        closeModal={() => setOpenAddDonationModal(false)}
+        width="43rem"
+      >
+        <DonationModal />
+      </Modal>
     </DashboardLayout>
   );
 };

@@ -2,8 +2,8 @@
   @apply bg-black bg-opacity-20 h-screen w-screen absolute inset-0 z-50;
 }
 .Modal {
-  @apply w-52 bg-white absolute z-[60] border-t-[10px] border-primary rounded-[10px] -top-[100vh] transition-all;
-  right: calc(50vw - 15rem);
+  @apply bg-white absolute z-[60] border-t-[10px] border-primary rounded-[10px] -top-[100vh] transition-all;
+  right: calc(50vw - 20rem);
 
   &.open {
     @apply top-40;

@@ -1,0 +1,47 @@
+.modal-container {
+  .donation-modal-wrap {
+    @apply flex justify-between items-center px-10;
+
+    .input-bg {
+      @apply bg-gray4 rounded-md flex items-center;
+    }
+  }
+
+  .monthly-payment {
+    @apply flex px-10 items-center gap-4 py-8;
+  }
+
+  hr {
+    @apply border border-solid mx-7 mb-8 border-[#f5f5f5];
+  }
+
+  .cardholder-wrap {
+    @apply flex justify-between items-center px-10;
+
+    .input-bg {
+      @apply bg-gray4 rounded-md flex items-center;
+    }
+  }
+
+  .cardnumber-wrap {
+    @apply flex py-10 px-10 items-center;
+  }
+
+  .expirydate-wrap {
+    @apply flex items-center gap-8 px-10;
+
+    .expiry-bg {
+      @apply flex items-center gap-6 px-6 h-[3.2rem] w-[17rem] bg-gray4 rounded-md;
+
+      input {
+        @apply w-10 bg-[#D0D0D0] pl-3  bg-none outline-none border border-solid border-gray3 rounded;
+        ::placeholder {
+          @apply text-gray3;
+        }
+      }
+    }
+  }
+  .exclamation-wrap {
+    @apply w-full flex items-center justify-center pb-12;
+  }
+}
