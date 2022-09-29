@@ -1,0 +1,27 @@
+.edit-modal-container {
+  @apply overflow-y-auto h-[65vh] flex flex-col items-center w-full px-10;
+
+  .selector-wrap {
+    @apply flex justify-between items-center w-full;
+
+    .input-bg {
+      @apply w-[30%];
+    }
+  }
+
+  .phone-number-wrapper {
+    @apply flex items-center w-full justify-between;
+  }
+
+  .textarea-wrap {
+    @apply bg-gray4 mt-3 rounded-md py-3;
+
+    textarea {
+      @apply bg-gray4 w-full outline-none text-black text-xl font-bold rounded-md pl-4;
+    }
+  }
+
+  hr {
+    @apply border-2 border-solid mx-12 mb-8 border-[#f5f5f5];
+  }
+}

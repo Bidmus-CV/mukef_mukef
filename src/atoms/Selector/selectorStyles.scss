@@ -1,0 +1,28 @@
+.selector-wrapper {
+  @apply w-full relative;
+
+  .label {
+    @apply text-sm text-gray3;
+  }
+
+  .selector {
+    @apply py-4 text-sm w-full bg-gray4 flex items-center justify-between rounded-[4.5px] cursor-pointer px-3 mt-2;
+
+    transition: all 0.5s ease-out;
+  }
+
+  .showOptions {
+    @apply bg-white shadow w-full inline-block left-0 absolute p-4;
+
+    .option {
+      @apply cursor-pointer hover:shadow-lg p-3;
+    }
+  }
+
+  .hideOptions {
+    @apply absolute left-0 h-0 inline-block text-red-500 hidden;
+
+    //   transition: visibility 0.3s ease-in-out;
+    //   transition-delay: 0.1s;
+  }
+}

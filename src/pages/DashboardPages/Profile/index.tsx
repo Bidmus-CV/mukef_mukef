@@ -7,9 +7,11 @@ import DonationHistoryTable from "../../../molecules/tables/DonationHistoryTable
 import { useState } from "react";
 import DonationModal from "../../../organisms/modals/donationModal";
 import Modal from "../../../organisms/modals";
+import EditProfileModal from "../../../organisms/modals/editProfileModal";
 
 const Profile = () => {
   const [openAddDonationModal, setOpenAddDonationModal] = useState(false);
+  const [openPersonalInfo, setOpenPersonalInfo] = useState(false);
   const personalInfoList = [
     {
       title: "Title",
@@ -64,11 +66,22 @@ const Profile = () => {
           ))}
         </div>
         <div className="button w-[13.5rem]">
-          <Button customClasses="bg-primary text-whitee rounded-md font-medium">
+          <Button
+            customClasses="bg-primary text-whitee rounded-md font-medium"
+            onClick={() => setOpenPersonalInfo(true)}
+          >
             Edit
           </Button>
         </div>
       </div>
+      <Modal
+        title="Edit profile"
+        openModal={openPersonalInfo}
+        closeModal={() => setOpenPersonalInfo(false)}
+        width="40rem"
+      >
+        <EditProfileModal />
+      </Modal>
 
       <div className="project-history">
         <h3>Project support history</h3>

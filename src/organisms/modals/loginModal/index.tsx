@@ -6,8 +6,12 @@ import "./LoginModal.scss";
 const LoginModal = () => {
   return (
     <div className="modal-wrapper">
-      <Input placeholder="Email or phone number" />
-      <Input placeholder="Password" type="password" />
+      <div className="w-[85%]">
+        <Input placeholder="Email or phone number" />
+      </div>
+      <div className="w-[85%]">
+        <Input placeholder="Password" type="password" />
+      </div>
       <div className="text-wrap">
         <div className="remember-me">
           <div className="h-6 w-6 bg-gray4"></div>
