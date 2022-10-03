@@ -1,0 +1,53 @@
+.subscribe-wrapper {
+  background: url("/images/image15.png");
+  background-size: cover;
+  @apply h-[30rem] w-full flex items-center mb-[20rem] flex-col relative;
+
+  .subscribe-content-wrapper {
+    @apply absolute flex gap-16 bottom-[-10rem];
+
+    .join-us-container {
+      @apply text-white flex flex-col gap-y-8 max-w-sm;
+
+      .title {
+        @apply text-3xl pl-8;
+      }
+
+      .description {
+        @apply text-lg pl-8;
+      }
+
+      .location-wrapper {
+        @apply flex flex-col items-center w-full h-[14rem] bg-primary;
+
+        .right {
+          .header {
+            @apply font-bold pt-4 text-[1.058rem];
+          }
+
+          .top {
+            @apply flex gap-3 max-w-xs items-center;
+          }
+        }
+      }
+    }
+
+    .create-account-wrapper {
+      @apply bg-primary flex items-center rounded-[14.56px] h-[29rem] w-[51.3rem];
+      box-shadow: -7.27927px 2.91171px 30.5729px 13.1027px
+        rgba(103, 175, 216, 0.24);
+    }
+
+    .instant-donation {
+      @apply flex flex-col h-[29rem] w-[25%];
+
+      .top-desc {
+        @apply flex flex-col text-white gap-y-8;
+      }
+    }
+
+    .form-wrapper {
+      @apply w-[75%] bg-white rounded-[14.56px] h-[29rem];
+    }
+  }
+}

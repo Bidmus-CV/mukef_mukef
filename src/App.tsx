@@ -9,6 +9,7 @@ import Contact from "./pages/NavPages/Contact";
 import HomePage from "./pages/NavPages/Home";
 import News from "./pages/NavPages/News";
 import Projects from "./pages/NavPages/ProjectsPage";
+import Subscribe from "./pages/NavPages/subscribe";
 function App() {
   return (
     <div className="">
@@ -22,6 +23,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/support-project" element={<Support />} />
         <Route path="/transaction" element={<Transaction />} />
+        <Route path="/subscribe" element={<Subscribe />} />
       </Routes>
     </div>
   );

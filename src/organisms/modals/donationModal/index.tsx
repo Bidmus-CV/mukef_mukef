@@ -34,15 +34,15 @@ const DonationModal = () => {
           <Input placeholder="Payment method" />
           <ArrowDownIcon />
         </div>
-        <div className="input-bg w-[18rem]">
+        <div className="input-bg">
           <Input placeholder="Cardholder" />
         </div>
       </div>
       <div className="cardnumber-wrap">
-        <div className="input-bg w-[26rem]">
+        <div className="input-bg w-[18.5rem]">
           <Input placeholder="Card number" />
         </div>
-        <div className="input-bg w-[16rem] ">
+        <div className="input-bg w-[14rem]">
           <Input placeholder="CVC" />
         </div>
         <div className="image">

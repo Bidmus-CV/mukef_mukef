@@ -3,7 +3,7 @@
     @apply flex justify-between items-center px-10;
 
     .input-bg {
-      @apply bg-gray4 rounded-md flex items-center;
+      @apply bg-gray4 rounded-md flex pr-4 items-center;
     }
   }
 
@@ -19,12 +19,12 @@
     @apply flex justify-between items-center px-10;
 
     .input-bg {
-      @apply bg-gray4 rounded-md flex items-center;
+      @apply bg-gray4 rounded-md flex pr-4 items-center;
     }
   }
 
   .cardnumber-wrap {
-    @apply flex py-10 px-10 items-center;
+    @apply flex py-10 px-10 justify-between items-center;
   }
 
   .expirydate-wrap {

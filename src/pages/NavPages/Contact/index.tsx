@@ -30,7 +30,7 @@ const Contact = () => {
           </div>
         </div>
         <section className="main pt-[8rem]">
-          <div className="input-card  h-[20rem] w-[20rem]"></div>
+          <div className="input-card h-[20rem] w-[20rem]"></div>
         </section>
       </>
     </PageLayout>

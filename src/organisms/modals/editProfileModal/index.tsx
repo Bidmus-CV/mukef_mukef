@@ -36,7 +36,7 @@ const EditProfileModal = () => {
             label="Title"
           />
         </div>
-        <div className="w-[65%] ">
+        <div className="w-[65%]">
           <Input
             placeholder="Abdul-Ganiyy Oladosu AGAS..."
             label=" Full Name"

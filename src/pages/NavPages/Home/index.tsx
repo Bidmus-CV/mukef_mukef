@@ -4,8 +4,13 @@ import "./Home.scss";
 import { leftCard, rightCard } from "../../../data/HomeData";
 import News from "../../../atoms/News";
 import homeNewsData from "../../../data/HomeNewsData";
+import { useState } from "react";
+import Modal from "../../../organisms/modals";
+import InstantDonationModal from "../../../organisms/modals/instantDonationModal";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
+  const [openInstantDonation, setOpenInstantDonation] = useState(false);
   return (
     <PageLayout>
       <div className="home-wrapper">
@@ -15,13 +20,25 @@ const HomePage = () => {
           </h2>
           <div className="button-holder flex gap-10 pt-10">
             <div className="w-[16.375rem]">
-              <Button customClasses="text-whitee border-whitee" outline={true}>
+              <Button
+                customClasses="text-whitee border-whitee"
+                outline={true}
+                onClick={() => setOpenInstantDonation(true)}
+              >
                 Make an instant donation
               </Button>
             </div>
+            <Modal
+              title="Edit profile"
+              openModal={openInstantDonation}
+              closeModal={() => setOpenInstantDonation(false)}
+              width="38rem"
+            >
+              <InstantDonationModal />
+            </Modal>
             <div className="w-[16.375rem] ">
               <Button customClasses="bg-whitee rounded-[5px]" outline={true}>
-                Join us
+                <Link to="/subscribe">Join us</Link>
               </Button>
             </div>
           </div>
