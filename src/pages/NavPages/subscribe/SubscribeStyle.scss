@@ -10,11 +10,11 @@
       @apply text-white flex flex-col gap-y-8 max-w-sm;
 
       .title {
-        @apply text-3xl pl-8;
+        @apply text-3xl px-8;
       }
 
       .description {
-        @apply text-lg pl-8;
+        @apply text-lg px-8;
       }
 
       .location-wrapper {
